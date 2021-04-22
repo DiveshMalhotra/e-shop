@@ -2,9 +2,9 @@
     <div class="modal-body">
         <div class="row no-gutters">
             <h3 class="header">{{ product?.name }}</h3>
-            <span class="circle yellow close-button float-right" (click)="closeModal()">+</span>
+            <span class="circle yellow close-button float-right cursor-pointer" (click)="closeModal()">+</span>
             <div class="col-sm-6 product-popover-template">
-                <p class="yellow social-media-close" [ngClass]="{ 'open' : isExpanded }" (click)="expandSocialMedia()">+
+                <p class="yellow social-media-close cursor-pointer" [ngClass]="{ 'open' : isExpanded }" (click)="expandSocialMedia()">+
                 </p>
                 <ng-container *ngIf="isExpanded || smallScreen">
                     <p class="circle yellow social-media">f</p>
@@ -37,7 +37,7 @@
                     <p class="mt-4">
                         <span class="popup mr-1">{{ smallScreen ? ('select a size' | uppercase) : ('size' | uppercase)
                             }}:</span><br *ngIf="smallScreen">
-                        <span class="circle grey size-circle" *ngFor="let size of product.sizes"
+                        <span class="circle grey size-circle cursor-pointer" *ngFor="let size of product.sizes"
                             (click)="selectedSize(size, product.sizes)" [ngClass]="{ 'selected' : size.selected }">
                             {{ size.size }}
                         </span>
