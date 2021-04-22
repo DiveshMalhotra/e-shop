@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "e-shop-758bc",
     "public": "dist/e-shop",
     "ignore": [
       "firebase.json",
