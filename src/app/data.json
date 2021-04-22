@@ -1,0 +1,164 @@
+[
+    {
+        "name": "Product Name 1",
+        "oldPrice": 29.59,
+        "newPrice": 19.99,
+        "item": "70164563749",
+        "rating": "3",
+        "selected": false,
+        "sizes": [
+            {
+                "size": "XL",
+                "selected": false
+            },
+            {
+                "size": "L",
+                "selected": false
+            },
+            {
+                "size": "M",
+                "selected": false
+            },
+            {
+                "size": "S",
+                "selected": false
+            }
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."        
+    },
+    {
+        "name": "Product Name 2",
+        "oldPrice": 32.99,
+        "newPrice": 26.99,
+        "item": "70164563749",
+        "rating": "4",
+        "selected": false,
+        "sizes": [
+            {
+                "size": "XL",
+                "selected": false
+            },
+            {
+                "size": "L",
+                "selected": false
+            },
+            {
+                "size": "M",
+                "selected": false
+            },
+            {
+                "size": "S",
+                "selected": false
+            }
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."        
+    },
+    {
+        "name": "Product Name 3",
+        "oldPrice": 9.99,
+        "newPrice": null,
+        "item": "70164563749",
+        "rating": "2",
+        "selected": false,
+        "sizes": [
+            {
+                "size": "XL",
+                "selected": false
+            },
+            {
+                "size": "L",
+                "selected": false
+            },
+            {
+                "size": "M",
+                "selected": false
+            },
+            {
+                "size": "S",
+                "selected": false
+            }
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."        
+    },
+    {
+        "name": "Product Name 4",
+        "oldPrice": 52.99,
+        "newPrice": null,
+        "item": "70164563749",
+        "rating": "5",
+        "selected": false,
+        "sizes": [
+            {
+                "size": "XL",
+                "selected": false
+            },
+            {
+                "size": "L",
+                "selected": false
+            },
+            {
+                "size": "M",
+                "selected": false
+            },
+            {
+                "size": "S",
+                "selected": false
+            }
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."        
+    },
+    {
+        "name": "Product Name 5",
+        "oldPrice": 69.99,
+        "newPrice": 39.99,
+        "item": "70164563749",
+        "rating": "3",
+        "selected": false,
+        "sizes": [
+            {
+                "size": "XL",
+                "selected": false
+            },
+            {
+                "size": "L",
+                "selected": false
+            },
+            {
+                "size": "M",
+                "selected": false
+            },
+            {
+                "size": "S",
+                "selected": false
+            }
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."        
+    },
+    {
+        "name": "Product Name 6",
+        "oldPrice": 34.99,
+        "newPrice": null,
+        "item": "70164563749",
+        "rating": "5",
+        "selected": false,
+        "sizes": [
+            {
+                "size": "XL",
+                "selected": false
+            },
+            {
+                "size": "L",
+                "selected": false
+            },
+            {
+                "size": "M",
+                "selected": false
+            },
+            {
+                "size": "S",
+                "selected": false
+            }
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."        
+    }
+]

@@ -1,1 +1,144 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+    top: 10vh;
+    position: relative;
+    max-width: 992px;
+}
+
+.yellow {
+    color: rgba(232, 152, 6, 1);
+}
+
+.card {
+    border: none;
+}
+
+.product-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+    &.new {
+        color: #CE2C52;
+    }
+}
+
+.show-more {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: white;
+    height: 28px;
+    width: 151px;
+    left: 58px;
+    top: 119px;
+    border-radius: 0px;
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    background: rgba(124, 186, 234, 1);
+}
+
+.price-box {
+    bottom: 80px;
+    right: 0;
+    position: absolute;
+    background-color: lightskyblue;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    display: inline-block;
+}
+
+.popup-product-number {
+    font-weight: lighter;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.7px;
+}
+
+.popup-product-price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 1px;
+
+    &.new {
+        color: #CE2C52;
+    }
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.popup-product-entry {
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0px;
+    padding-right: 40px;
+    text-align: justify;
+
+    @media (min-width: 375px) and (max-width: 768px) {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.popup {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px; 
+}
+
+.button {
+    height: 45px;
+    width: 212.04px;
+    border-radius: 22.5px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.7px;
+    border: none;
+    background-color: rgba(232, 152, 6, 1);
+    color: white;
+}
+
+.circle {
+    border-radius: 50%;
+
+    &.grey {
+        border: 1px solid gray;
+        color: gray;
+
+        &:focus {
+            color: white;
+            background-color: gray;
+        }
+    }
+
+    &.yellow {
+        border: 2px solid rgba(232, 152, 6, 1);
+        color: rgba(232, 152, 6, 1);
+    }
+}
+
+.product-template {
+    height: 265px;
+    width: 265px;
+    background: radial-gradient(51.17% 51.78% at 50% 51.17%, #73909C 0%, #204859 100%);
+}

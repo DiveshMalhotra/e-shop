@@ -1,0 +1,17 @@
+<div class="container" *ngIf="data.length > 0">
+    <div class="row justify-content-center">
+        <div class="card ml-2 mr-2" *ngFor="let product of data">
+            <div tabindex="1" class="product-template" (mouseenter)="productInFocus(product)" (mouseleave)="productInFocus(product)"
+                (click)="openModal(product)">
+                <p *ngIf="product.selected" class="show-more">SHOW MORE</p>
+                <p class="price-box">
+                    <span class="product-price ml-1 mr-2" [ngClass]="{ 'line-through' : product.newPrice }">${{ product?.oldPrice }}</span>
+                    <span class="product-price new mr-1" *ngIf="product.newPrice">${{ product?.newPrice }}</span>
+                </p>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-center">{{ product?.name }}</h5>
+            </div>
+        </div>
+    </div>
+</div>

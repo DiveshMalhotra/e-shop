@@ -1,0 +1,49 @@
+<div class="modal-content">
+    <div class="modal-body">
+        <div class="row no-gutters">
+            <h3 class="header">{{ product?.name }}</h3>
+            <span class="circle yellow close-button float-right" (click)="closeModal()">+</span>
+            <div class="col-sm-6 product-popover-template">
+                <p class="yellow social-media-close" [ngClass]="{ 'open' : isExpanded }" (click)="expandSocialMedia()">+
+                </p>
+                <ng-container *ngIf="isExpanded">
+                    <p class="circle yellow social-media">f</p>
+                    <p class="circle yellow social-media">t</p>
+                    <p class="circle yellow social-media">P</p>
+                    <p class="circle yellow social-media">y</p>
+                    <p class="circle yellow social-media">i</p>
+                </ng-container>
+            </div>
+            <div class="col-sm-6 description">
+                <p class="popup-product-number">Item #: {{ product?.item }}</p>
+                <p class="details lap">
+                    <span class="popup-product-price mr-1" [ngClass]="{ 'line-through' : product.newPrice }">${{ product?.oldPrice }}</span>
+                    <span class="popup-product-price new ml-3" *ngIf="product.newPrice">${{ product?.newPrice }}</span>
+                </p>
+                <p>
+                    <span *ngFor="let star of ' '.repeat(5).split(''); let idx = index" class="star-rating"
+                        [ngClass]="{ 'filled' : idx+1 <= product.rating }">
+                        &#9733;
+                    </span>
+                </p>
+                <div class="details tab">
+                    <p class="popup-product-price mr-4" [ngClass]="{ 'line-through' : product.newPrice }">${{ product?.oldPrice }}</p>
+                    <p class="popup-product-price new" *ngIf="product.newPrice">${{ product?.newPrice }}</p>
+                </div>
+                <p class="mt-3 popup-product-entry details lap">{{ product?.description }}</p>
+                <p class="mt-4">
+                    <span class="popup mr-1">{{ smallScreen ? 'SELECT A SIZE' : 'SIZE' }}:</span><br *ngIf="smallScreen">
+                    <span class="circle grey size-circle" *ngFor="let size of product.sizes" (click)="selectedSize(size, product.sizes)"
+                        [ngClass]="{ 'selected' : size.selected }">
+                        {{ size.size }}
+                    </span>
+                </p>
+                <button class="button">ADD TO CART</button>
+            </div>
+            <p class="mt-3 popup-product-entry details tab">
+                <span class="popup">DETAILS:</span><br>
+                <span>{{ product?.description }}</span>
+            </p>
+        </div>
+    </div>
+</div>
