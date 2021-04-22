@@ -17,7 +17,8 @@
             <div class="col-sm-6 description">
                 <p class="popup-product-number">Item #: {{ product?.item }}</p>
                 <p class="details lap pricing-small">
-                    <span class="popup-product-price mr-1" [ngClass]="{ 'line-through' : product.newPrice }">${{ product?.oldPrice }}</span>
+                    <span class="popup-product-price mr-1" [ngClass]="{ 'line-through' : product.newPrice }">${{
+                        product?.oldPrice }}</span>
                     <span class="popup-product-price new ml-3" *ngIf="product.newPrice">${{ product?.newPrice }}</span>
                 </p>
                 <p class="rating">
@@ -27,23 +28,25 @@
                     </span>
                 </p>
                 <div class="details tab">
-                    <p class="popup-product-price mr-4" [ngClass]="{ 'line-through' : product.newPrice }">${{ product?.oldPrice }}</p>
+                    <p class="popup-product-price mr-4" [ngClass]="{ 'line-through' : product.newPrice }">${{
+                        product?.oldPrice }}</p>
                     <p class="popup-product-price new" *ngIf="product.newPrice">${{ product?.newPrice }}</p>
                 </div>
                 <p class="mt-3 popup-product-entry details lap">{{ product?.description }}</p>
                 <div class="size-cart">
                     <p class="mt-4">
-                        <span class="popup mr-1">{{ smallScreen ? 'SELECT A SIZE' : 'SIZE' }}:</span><br *ngIf="smallScreen">
-                        <span class="circle grey size-circle" *ngFor="let size of product.sizes" (click)="selectedSize(size, product.sizes)"
-                            [ngClass]="{ 'selected' : size.selected }">
+                        <span class="popup mr-1">{{ smallScreen ? ('select a size' | uppercase) : ('size' | uppercase)
+                            }}:</span><br *ngIf="smallScreen">
+                        <span class="circle grey size-circle" *ngFor="let size of product.sizes"
+                            (click)="selectedSize(size, product.sizes)" [ngClass]="{ 'selected' : size.selected }">
                             {{ size.size }}
                         </span>
                     </p>
-                    <button class="button">ADD TO CART</button>
+                    <button class="button">{{ 'add to cart' | uppercase }}</button>
                 </div>
             </div>
             <p class="mt-3 popup-product-entry details tab">
-                <span class="popup">DETAILS:</span><br>
+                <span class="popup">{{ 'details' | uppercase }}:</span><br>
                 <span>{{ product?.description }}</span>
             </p>
         </div>

@@ -4,11 +4,11 @@
     width: 420px;
     background: radial-gradient(51.17% 51.78% at 50% 51.17%, #73909C 0%, #204859 100%);
 
-    @media (min-width: 376px) and (max-width: 768px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         top: 55px;
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
         top: 120px;
         height: 375px;
         width: 325px;
@@ -18,11 +18,11 @@
 .modal-body {
     min-height: 450px;
 
-    @media (min-width: 375px) and (max-width: 768px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         min-height: 630px;
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
         min-height: 950px;
     }
 }
@@ -57,11 +57,11 @@
     position: absolute;
     left: 55%;
     
-    @media (min-width: 376px) and (max-width: 768px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         left: 15px;
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
         left: 15px;
         top: 50px;   
     }
@@ -107,11 +107,11 @@
     left: 22px;
     top: 70px;
 
-    @media (min-width: 375px) and (max-width: 769px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         top: 20px
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
         display: inline-block;
         top: 530px;
         margin-left: 10px;
@@ -132,7 +132,7 @@
         background-color: gray;
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
         right: 20px;
         margin: 10px 0px 20px 40px;
     }
@@ -150,7 +150,7 @@
 
 .rating {
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
         position: absolute;
         top: 25px;
         left: 35px;
@@ -159,7 +159,7 @@
 
 .pricing-small {
     
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
         top: 650px !important;
         right: 100px !important;
     }
@@ -167,7 +167,7 @@
 
 .size-cart {
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
         position: relative;
         top: 500px;
         right: 178px;
