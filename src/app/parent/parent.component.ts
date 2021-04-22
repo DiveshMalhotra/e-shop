@@ -44,9 +44,10 @@ export class ParentComponent implements OnInit {
       windowClass: 'child-component-modal',
       keyboard: false,
       centered: true,
-      size: 'lg'
+      size: 'xl'
     };
     productModal = this.modalService.open(ChildComponent, modalConfig);
     productModal.componentInstance.product = product;
+    productModal.componentInstance.smallScreen = window.innerWidth <= 768;
   }
 }

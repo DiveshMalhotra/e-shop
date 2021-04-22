@@ -4,8 +4,14 @@
     width: 420px;
     background: radial-gradient(51.17% 51.78% at 50% 51.17%, #73909C 0%, #204859 100%);
 
-    @media (max-width: 768px) {
+    @media (min-width: 376px) and (max-width: 768px) {
         top: 55px;
+    }
+
+    @media (max-width: 376px) {
+        top: 120px;
+        height: 375px;
+        width: 325px;
     }
 }
 
@@ -15,6 +21,10 @@
     @media (min-width: 375px) and (max-width: 768px) {
         min-height: 630px;
     }
+
+    @media (max-width: 376px) {
+        min-height: 950px;
+    }
 }
 
 .details {
@@ -22,15 +32,22 @@
     &.lap {
         display: block;
     
-        @media (max-width: 768px) {
+        @media (min-width: 376px) and (max-width: 768px) {
             display: none;
+        }
+
+        @media (max-width: 376px) {
+            position: relative !important;
+            top: 400px;
+            right: 178px;
+            padding-right: 0 !important;
         }
     }
 
     &.tab {
         display: none;
     
-        @media (max-width: 768px) {
+        @media (min-width: 376px) and (max-width: 768px) {
             display: block;
         }
     }
@@ -40,8 +57,13 @@
     position: absolute;
     left: 55%;
     
-    @media (max-width: 768px) {
-        left: 3.25%
+    @media (min-width: 376px) and (max-width: 768px) {
+        left: 15px;
+    }
+
+    @media (max-width: 376px) {
+        left: 15px;
+        top: 50px;   
     }
 }
 
@@ -74,9 +96,6 @@
     right: 10px;
     top: 10px;
     line-height: 30px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
     font-weight: 400;
     transform: rotate(45deg);
 }
@@ -87,12 +106,16 @@
     position: relative;
     left: 22px;
     top: 70px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
 
     @media (min-width: 375px) and (max-width: 769px) {
         top: 20px
+    }
+
+    @media (max-width: 375px) {
+        display: inline-block;
+        top: 530px;
+        margin-left: 10px;
+        left: 30px;
     }
 }
 
@@ -103,13 +126,15 @@
     line-height: 36px;
     position: relative;
     margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
 
     &.selected {
         color: white;
         background-color: gray;
+    }
+
+    @media (max-width: 376px) {
+        right: 20px;
+        margin: 10px 0px 20px 40px;
     }
 }
 
@@ -123,3 +148,29 @@
     }
 }
 
+.rating {
+
+    @media (max-width: 376px) {
+        position: absolute;
+        top: 25px;
+        left: 35px;
+    }
+}
+
+.pricing-small {
+    
+    @media (max-width: 376px) {
+        top: 650px !important;
+        right: 100px !important;
+    }
+}
+
+.size-cart {
+
+    @media (max-width: 376px) {
+        position: relative;
+        top: 500px;
+        right: 178px;
+        text-align: center;
+    }
+}
